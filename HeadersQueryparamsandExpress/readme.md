@@ -18,3 +18,4 @@ The headers that the `client` sends out in the request are known as request head
 
 The headers that the `server` responds with are known as the response headers.
 ![ResponseHEader](/HeadersQueryparamsandExpress/Screenshot%202024-08-31%20at%206.52.34%20PM.png)
+
