@@ -3,6 +3,8 @@ const app = express();
 const jwt = require('jsonwebtoken')
 const jWT_SECRET = "testingjwt@jwttoken";
 app.use(express.json())
+
+// users empty 
 const users = [];
 
 
@@ -45,7 +47,7 @@ app.post('/signin', function(req, res) {
 app.get('/me', function(req, res) {
     const token = req.headers.token; // Get token from headers
 
-    const decodedinfo = jwt.verify(token,jWT_SECRET)
+    const decodedinfo = jwt.verify(token,jWT_SECRET) // verify
     const username = decodedinfo.username;
     let founduser = null;
 
