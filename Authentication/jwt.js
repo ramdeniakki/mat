@@ -60,8 +60,8 @@ app.post("/signin", function(req, res) {
 
 app.get("/me", function(req, res) {
     const token = req.headers.token // jwt
-    const decodedInformation = jwt.verify(token, JWT_SECRET);  // {username: "harkirat@gmail.com"}
-    const unAuthDecodedinfo = jwt.decode(token,);  // {username: "harkirat@gmail.com"}
+    const decodedInformation = jwt.verify(token, JWT_SECRET);  
+    const unAuthDecodedinfo = jwt.decode(token,); 
     const username = decodedInformation.username
     let foundUser = null;
 
@@ -86,4 +86,4 @@ app.get("/me", function(req, res) {
 })
 
 
-app.listen(3000);// that the http server is listening on port 3000
+app.listen(3000);
