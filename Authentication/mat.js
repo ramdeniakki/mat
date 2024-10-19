@@ -18,6 +18,7 @@ app.post('/signup', (req, res) => {
     res.json({
         msg: "You have successfully signed up dude!"
     });
+    console.log(users)
 });
 
 app.post('/signin', (req, res) => {
@@ -67,8 +68,8 @@ app.get('/get', (req, res) => {
 
         if (foundUser) {
             res.json({
-                username: foundUser.username,
-                password: foundUser.password // Consider not sending the password
+                username: foundUser.username
+                // password: foundUser.password // Consider not sending the password
             });
         } else {
             res.json({
