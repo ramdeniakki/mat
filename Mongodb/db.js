@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const { emit } = require('nodemon');
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.ObjectId;
 
