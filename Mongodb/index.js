@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const jwt = require("jsonwebtoken")
 const JWT_SECERET = "testingemail.come";
-mongoose.connect("mongodb+srv://admin:admin%400701@cluster0.xujxl.mongodb.net/todo-app-database");
+
 const app = express();
 app.use(express.json());
 app.post('/signup',async function(req,res){
